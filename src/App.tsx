@@ -52,7 +52,6 @@ const offlineMutationExchange: () => Exchange = () => {
         map(op => makeErrorResult(op, new Error('You are offline!'))),
       );
 
-      // everything else
       const rest = pipe(
         shared,
         filter(
